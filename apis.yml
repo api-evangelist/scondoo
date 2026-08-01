@@ -1,19 +1,44 @@
 aid: scondoo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scondoo.png
 name: Scondoo
-description: Scondoo is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Scondoo is a German consumer cashback and coupon platform, operated by acardo group AG, that
+  lets shoppers earn money back on everyday grocery and drugstore purchases. Users browse
+  exclusive cashback deals in the scondoo iOS and Android apps, buy the qualifying products at
+  any supermarket or drugstore (Kaufland, REWE, EDEKA, Netto, Aldi, Lidl, dm, Rossmann and many
+  more), then snap a photo of the receipt to have the cashback credited to their balance and paid
+  out via bank transfer or PayPal. The service is consumer-facing and mobile-only; it publishes
+  no public developer API, SDKs, or partner integration surface.
 url: https://raw.githubusercontent.com/api-evangelist/scondoo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - point-nine
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: consumer-app-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Cashback
+- Coupons
+- Retail
+- Consumer
+- Mobile Apps
+- Germany
+- Shopping
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/scondoo-domain-security.yml
 - type: Website
-  url: http://scondoo.de
+  url: https://scondoo.de
+- type: Support
+  url: https://scondoo.de/hilfe
+- type: TermsOfService
+  url: https://scondoo.de/nutzungsbedingungen
+- type: PrivacyPolicy
+  url: https://scondoo.de/datenschutz
+- type: X-App-Android
+  url: https://play.google.com/store/apps/details?id=de.scondoo.android
+- type: X-App-iOS
+  url: https://apps.apple.com/de/app/scondoo-cashback-app/id592386187
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
